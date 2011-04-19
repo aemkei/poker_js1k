@@ -40,6 +40,9 @@
    *   "Y88888888P"
    * 
    * 
+   * SOURCE: https://github.com/aemkei/poker_js1k
+   * SLIDES: http://go.ubilabs.net/js1k
+   * 
    * 
    * DESCRIPTION
    * 

@@ -38,13 +38,12 @@
    "Y88888888P"
  
  
- 
  DESCRIPTION
  
  You're the last man standing.
  To leave this dirty little town you need more money.
  The barmaid offers you a simple Poker game:
- You start with 100$ and every round cost 10$
+ You start with 100$ and every round cost 10$.
  
  Winnings:
  
@@ -58,3 +57,7 @@
    160$: Royal Flush
  
  Good luck, cowboy!
+ 
+ 
+ Check out my slides about the minification:
+ http://go.ubilabs.net/js1k
