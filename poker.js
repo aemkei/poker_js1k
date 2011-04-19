@@ -263,7 +263,8 @@
       "Trade Selected Cards";
     
     if (!cash && in_progress) {
-      alert("Game over!"); 
+      _document.getElementById("I").innerHTML = "Game over!"; 
+      _document.getElementById("D").style.opacity = 0;
     }
   };
 
