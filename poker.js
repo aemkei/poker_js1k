@@ -256,7 +256,7 @@
     // update result
     _document.getElementById("I").innerHTML = (
       in_progress ?
-      "You lose02 Pairs0Three0Straight0Flush0Full House0Four0Straight Flush0Royal Flush".split(0)[points] + "!<h3>" + (cash += points*2)*10
+      "NO LUCK02 PAIRS0THREE0STRAIGHT0FLUSH0FULL HOUSE0FOUR0STRAIGHT FLUSH0ROYAL FLUSH".split(0)[points] + "!<h3>" + (cash += points*2)*10
        : ".<h3>" +  (--cash*10)
     ) + "$";
     
@@ -266,7 +266,7 @@
       "Trade Selected Cards";
     
     if (!cash && in_progress) {
-      _document.getElementById("I").innerHTML = "Game over!"; 
+      _document.getElementById("I").innerHTML = "GAME OVER"; 
       _document.getElementById("D").style.opacity = 0;
     }
   };
