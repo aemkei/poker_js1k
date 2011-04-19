@@ -131,7 +131,7 @@
       // assign symbol using a unicode character
       String.fromCharCode([3, 0, 5, 6][i / 13 | 0] + 9824) +
       // assign number
-      "A23456789TJQK".split("")[i % 13] +
+      "A23456789TJQK"[i % 13] +
       // add some extra bottom space
       "<h6>…";
   }
