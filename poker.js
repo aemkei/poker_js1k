@@ -93,31 +93,6 @@
    */
 
 
-   /* Tests: Uncomment to check validation!
-
-
-   function test_winnings(a,b,c,d,e, label){
-     in_progress = 0;
-     dealt_cards = [a+13, b+13, c+13, d+13, e+13];
-     D();
-
-     var inner = document.getElementById("I").innerHTML
-     console.log(!!inner.match(label), label, dealt_cards);
-   }
-
-   test_winnings(13, 42, 23, 14, 05, "You lose")
-   test_winnings(01, 14, 02, 15, 05, "2 Pairs");
-   test_winnings(01, 27, 14, 15, 16, "Three");
-   test_winnings(12, 00, 09, 10, 24, "Straight");
-   test_winnings(00, 02, 04, 06, 08, "Flush");
-   test_winnings(01, 14, 00, 13, 26, "Full House");
-   test_winnings(01, 14, 27, 40, 03, "Four");
-   test_winnings(04, 01, 02, 03, 05, "Straight Flush");
-   test_winnings(12, 00, 09, 10, 11, "Royal Flush");
-
-   */
-
-
   // introduce all variables
   var i, html, _document, in_progress, cash, picked_cards,
     flipped_cards, dealt_cards, cards_html, matched_i,
@@ -303,5 +278,29 @@
 
   // start game
   D();
+  
+  /* Uncomment to run tests 
+
+  function test_winnings(a,b,c,d,e, label){
+    in_progress = 0;
+    dealt_cards = [a+13, b+13, c+13, d+13, e+13];
+    D();
+
+    var inner = document.getElementById("I").innerHTML
+    console.log(!!inner.match(label), label, dealt_cards);
+  }
+
+  test_winnings(13, 42, 23, 14, 05, "You lose")
+  test_winnings(01, 14, 02, 15, 05, "2 Pairs");
+  test_winnings(01, 27, 14, 15, 16, "Three");
+  test_winnings(12, 00, 09, 10, 24, "Straight");
+  test_winnings(00, 02, 04, 06, 08, "Flush");
+  test_winnings(01, 14, 00, 13, 26, "Full House");
+  test_winnings(01, 14, 27, 40, 03, "Four");
+  test_winnings(04, 01, 02, 03, 05, "Straight Flush");
+  test_winnings(12, 00, 09, 10, 11, "Royal Flush");
+
+  */
+
 
 })();
