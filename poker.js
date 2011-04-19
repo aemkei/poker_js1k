@@ -275,17 +275,21 @@
       }
     }
     
+    // update result
+    _document.getElementById("I").innerHTML = (
+      in_progress ?
+      "You lose02 Pairs0Three0Straight0Flush0Full House0Four0Straight Flush0Royal Flush".split(0)[points] + "!<h3>" + (cash += points*2)*10
+       : ".<h3>" +  (--cash*10)
+    ) + "$";
+    
     // update button
     _document.getElementById("D").innerHTML = in_progress ? 
       "New Game" : 
       "Trade Selected Cards";
-
-    // update result
-    _document.getElementById("I").innerHTML = (
-      in_progress ?
-      "You lose0Two Pairs0Three0Straight0Flush0Full House0Four0Straight Flush0Royal Flush".split(0)[points] + "!<h3>" + (cash += points*2)
-       : ".<h3>" +  (--cash)
-    ) + "0$";
+    
+    if (!cash && in_progress) {
+      alert("Game over!"); 
+    }
   };
 
   // mark flipped cards
